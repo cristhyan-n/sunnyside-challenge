@@ -1,0 +1,56 @@
+.header-bg {
+  background: url("../images/desktop/image-header.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-menu,
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+}
+
+.header-menu {
+  gap: 40px;
+}
+
+.header-menu li {
+  transition: 0.2s;
+}
+
+.header-menu li:hover {
+  transform: scale(1.1);
+}
+
+.header-menu li:hover:last-child {
+  transform: none;
+}
+
+.header-menu span {
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-weight: bold;
+  color: var(--very-des-blue);
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.header-menu span:hover {
+  background: none;
+  color: var(--white);
+}
+
+@media (max-width: 375px) {
+  .header-bg {
+    background: url("../images/mobile/image-header.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+}
