@@ -1,0 +1,97 @@
+
+.introducao-img-stand,
+.introducao-img-brand {
+  height: 80vh;
+}
+
+.introducao-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding: 0 80px;
+}
+
+.introducao-conteudo h1 {
+  font-size: 3rem;
+  color: var(--very-des-blue);
+}
+
+.introducao-conteudo p {
+  line-height: 1.5;
+  max-width: 50ch;
+  color: var(--gray-blue);
+}
+
+.introducao-conteudo a {
+  color: var(--very-des-blue);
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-weight: 900;
+  position: relative;
+  transition: .4s;
+}
+
+.introducao-conteudo a:hover {
+  transform: scale(1.1);
+}
+
+.introducao-conteudo a::before{
+  content: "";
+  display: block;
+  width: 110%;
+  height: 8px;
+  position: absolute;
+  bottom: -3px;
+  left: -5%;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.introducao-conteudo.brand a::before {
+  background: var(--yellow);
+}
+.introducao-conteudo.stand a::before {
+  background: var(--soft-red);
+}
+.introducao-img-brand {
+  background: url("../images/desktop/image-transform.jpg")no-repeat center;
+  background-size: cover;
+}
+
+.introducao-img-stand {
+  background: url("../images/desktop/image-stand-out.jpg")no-repeat center;
+  background-size: cover;
+}
+
+.graphic {
+  background: url("../images/desktop/image-graphic-design.jpg")no-repeat top;
+  background-size: cover;
+  color: var(--dark-des-cyan);
+}
+.photo {
+  background: url("../images/desktop/image-photography.jpg")no-repeat top;
+  background-size: cover;
+  color: var(--dark-blue);
+}
+
+.introducao {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 0 80px;
+}
+
+.introducao h1, p {
+  margin-bottom: 30px;
+}
+
+.introducao p {
+  max-width: 40ch;
+  line-height: 1.4;
+  text-align: center;
+}
