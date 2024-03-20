@@ -5,12 +5,13 @@
 }
 
 .header-menu,
-.header {
+.header-nav,
+.header-conteudo {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header {
+.header-nav {
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 2rem;
@@ -46,6 +47,20 @@
 .header-menu span:hover {
   background: none;
   color: var(--white);
+}
+
+.header-conteudo {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.header-conteudo h1 {
+  text-align: center;
+  font: 900 3rem/1 "Fraunces";
+  text-transform: uppercase;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 375px) {

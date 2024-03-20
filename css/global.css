@@ -5,6 +5,7 @@ body, ul, li, h1, h2, h3, p {
 body {
   background-color: #222;
   font: 600 1rem/1 "Barlow", sans-serif;
+  color: white;
   margin-bottom: 1000px;
 }
 
