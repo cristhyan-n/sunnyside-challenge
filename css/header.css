@@ -59,15 +59,48 @@
 .header-conteudo h1 {
   text-align: center;
   font: 900 3rem/1.2 "Fraunces";
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 80px;
+}
+
+.js-nav-btn {
+  display: none;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-top: solid 2px var(--white);
+  position: relative;
+  background: none;
+}
+
+.js-nav-btn::before,
+.js-nav-btn::after {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background: var(--white);
+  position: absolute;
+}
+.js-nav-btn::before {
+  top: 9px;
+  left: 0;
+}
+.js-nav-btn::after {
+  top: 20px;
+  left: 0;
 }
 
 @media (max-width: 375px) {
   .header-bg {
     background: url("../images/mobile/image-header.jpg") no-repeat bottom;
     background-size: cover;
+    height: 80vh;
+  }
+  .header-nav {
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
   }
   .header-conteudo {
     justify-content: start;
@@ -75,10 +108,39 @@
   .header-conteudo h1 {
     font-size: 2.5rem;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
   .header-conteudo img {
-
     width: 70%;
+  }
+
+  .header-menu a {
+    color: var(--very-gray-blue);
+  }
+
+  .header-menu span {
+    background: hsl(51, 100%, 49%);
+  }
+
+  .js .js-nav-btn {
+    display: block;
+  }
+
+  .js .js-navbar {
+    display: none;
+  }
+  .js .js-navbar.active {
+    background: var(--white);
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    left: 20px;
   }
 }
