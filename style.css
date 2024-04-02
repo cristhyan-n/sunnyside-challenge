@@ -2,6 +2,8 @@
 @import "./css/header.css";
 @import "./css/introducao.css";
 @import "./css/testimonials.css";
+@import "./css/imagens.css";
+@import "./css/footer.css";
 
 /* Componentes */
 @import "./css/componentes/cores.css";

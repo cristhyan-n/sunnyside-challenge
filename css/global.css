@@ -13,8 +13,7 @@ body, ul, li, h1, h2, h3, p {
 body {
   background-color: white;
   font: 600 1rem/1 "Barlow", sans-serif;
-  color: black;
-  margin-bottom: 1000px;
+  color: white;
 }
 
 ul {
