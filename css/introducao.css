@@ -85,8 +85,7 @@
   padding: 0 80px;
 }
 
-.introducao h1,
-p {
+.introducao h1 {
   margin-bottom: 30px;
 }
 
@@ -94,6 +93,7 @@ p {
   max-width: 40ch;
   line-height: 1.4;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 375px) {
