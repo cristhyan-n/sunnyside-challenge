@@ -110,8 +110,9 @@
     padding: 10px;
     margin-bottom: 80px;
   }
-  .header-conteudo img {
-    width: 70%;
+  .header-conteudo img{
+    height: 70px;
+    width: 36px;
   }
 
   .header-menu a {
