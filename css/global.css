@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-* h1 {
-  font-family: "Fraunces";
-}
-
 body, ul, li, h1, h2, h3, p {
   margin: 0;
 }
