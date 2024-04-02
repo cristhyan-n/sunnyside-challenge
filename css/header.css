@@ -121,9 +121,13 @@
   .header-menu span {
     background: hsl(51, 100%, 49%);
   }
+  .header-menu span:hover {
+    color: var(--very-des-blue);
+  }
 
   .js .js-nav-btn {
     display: block;
+    cursor: pointer;
   }
 
   .js .js-navbar {
